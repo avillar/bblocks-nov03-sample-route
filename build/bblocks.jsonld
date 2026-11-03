@@ -213,7 +213,7 @@
   "name": "Building Blocks - My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-11-03T16:22:11.811749",
+  "modified": "2026-11-03T16:26:38.626750",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"373c26d1cdf143759ae2c602c0713e98e6af6fc9",
@@ -258,51 +258,6 @@
   ],
   "skos:prefLabel": "Building Blocks - My OGC Building Blocks repository",
   "hasConcepts": [
-    {
-      "itemIdentifier": "ogc.bbr.template.my-custom-route",
-      "name": "Route",
-      "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-10-29T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "shaclShapes": null,
-      "dateOfLastChange": "2026-11-03",
-      "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.my-custom-route"
-        }
-      },
-      "@id": "bblocks://ogc.bbr.template.my-custom-route",
-      "@type": [
-        "bblocks:Schema",
-        "skos:Concept",
-        "dcat:Dataset",
-        "bblocks:BBlock"
-      ],
-      "skos:prefLabel": "Route",
-      "ldContext": null,
-      "schema": null,
-      "openAPIDocument": null,
-      "ontology": null,
-      "rdfData": [],
-      "dependsOn": null,
-      "isProfileOf": null,
-      "skos:topConceptOf": {
-        "@id": "https://avillar.github.io/bblocks-nov03-sample-route/"
-      }
-    },
     {
       "itemIdentifier": "ogc.bbr.template.mySchema",
       "$schema": "metaschema.yaml",
@@ -387,6 +342,83 @@
       "ontology": null,
       "rdfData": [],
       "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://avillar.github.io/bblocks-nov03-sample-route/"
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.template.my-custom-route",
+      "name": "Route",
+      "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-29T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "shaclShapes": [
+        {
+          "prof:hasArtifact": [
+            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+          ],
+          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
+          "prof:hasRole": "role:validation",
+          "dct:format": "text/turtle",
+          "dct:conformsTo": "shacl:"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://ogc.geo.features.feature"
+      ],
+      "dateOfLastChange": "2026-11-03",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/schema.yaml",
+      "ldContext": {
+        "prof:hasArtifact": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/resolvedProperties.json",
+      "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.my-custom-route"
+        }
+      },
+      "@id": "bblocks://ogc.bbr.template.my-custom-route",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Route",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
         "@id": "https://avillar.github.io/bblocks-nov03-sample-route/"
@@ -496,10 +528,10 @@
   ],
   "skos:hasTopConcept": [
     {
-      "@id": "bblocks://ogc.bbr.template.my-custom-route"
+      "@id": "bblocks://ogc.bbr.template.mySchema"
     },
     {
-      "@id": "bblocks://ogc.bbr.template.mySchema"
+      "@id": "bblocks://ogc.bbr.template.my-custom-route"
     },
     {
       "@id": "bblocks://ogc.bbr.template.myFeature"

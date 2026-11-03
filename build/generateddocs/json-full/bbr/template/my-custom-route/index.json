@@ -8,11 +8,25 @@
   "dateTimeAddition": "2026-10-29T00:00:00Z",
   "itemClass": "schema",
   "version": "0.1",
-  "shaclShapes": {},
+  "shaclShapes": {
+    "ogc.geo.features.feature": [
+      "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.geo.features.feature"
+  ],
   "dateOfLastChange": "2026-11-03",
+  "schema": {
+    "application/yaml": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.yaml",
+    "application/json": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.json"
+  },
+  "sourceSchema": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/schema.yaml",
+  "ldContext": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/context.jsonld",
+  "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/resolvedProperties.json",
   "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
   "validationPassed": true,
-  "annotatedSchema": null,
+  "annotatedSchema": "type: object\nallOf:\n- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml\n- properties:\n    geometry:\n      properties:\n        type:\n          const: MultiLineString\n    properties:\n      type: object\n      required:\n      - length\n      properties:\n        length:\n          type: number\n          exclusiveMinimum: 0\n          description: Length of the route, in metres.\n        name:\n          type: string\n          description: Human-readable name of the route.\n  required:\n  - geometry\n  - properties\nx-bblocks-metadata:\n  itemIdentifier: ogc.bbr.template.my-custom-route\n  register: https://avillar.github.io/bblocks-nov03-sample-route/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-10-29'\n",
   "gitRepository": "https://github.com/avillar/bblocks-nov03-sample-route",
   "gitPath": "_sources/my-custom-route"
 }

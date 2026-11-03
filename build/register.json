@@ -3,7 +3,7 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-11-03T16:22:11.811749",
+  "modified": "2026-11-03T16:26:38.626750",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"373c26d1cdf143759ae2c602c0713e98e6af6fc9",
@@ -21,33 +21,6 @@
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
   "bblocks": [
-    {
-      "itemIdentifier": "ogc.bbr.template.my-custom-route",
-      "name": "Route",
-      "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
-      "status": "under-development",
-      "dateTimeAddition": "2026-10-29T00:00:00Z",
-      "itemClass": "schema",
-      "version": "0.1",
-      "shaclShapes": {},
-      "dateOfLastChange": "2026-11-03",
-      "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
-      "validationPassed": true,
-      "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md"
-        },
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json"
-        },
-        "bblocks-viewer": {
-          "mediatype": "text/html",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.my-custom-route"
-        }
-      }
-    },
     {
       "itemIdentifier": "ogc.bbr.template.mySchema",
       "$schema": "metaschema.yaml",
@@ -97,6 +70,47 @@
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.mySchema"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.bbr.template.my-custom-route",
+      "name": "Route",
+      "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-29T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "shaclShapes": {
+        "ogc.geo.features.feature": [
+          "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.geo.features.feature"
+      ],
+      "dateOfLastChange": "2026-11-03",
+      "schema": {
+        "application/yaml": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.yaml",
+        "application/json": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.json"
+      },
+      "sourceSchema": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/schema.yaml",
+      "ldContext": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/context.jsonld",
+      "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/resolvedProperties.json",
+      "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.my-custom-route"
         }
       }
     },

@@ -1,0 +1,28 @@
+type: object
+allOf:
+- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+- properties:
+    geometry:
+      properties:
+        type:
+          const: MultiLineString
+    properties:
+      type: object
+      required:
+      - length
+      properties:
+        length:
+          type: number
+          exclusiveMinimum: 0
+          description: Length of the route, in metres.
+        name:
+          type: string
+          description: Human-readable name of the route.
+  required:
+  - geometry
+  - properties
+x-bblocks-metadata:
+  itemIdentifier: ogc.bbr.template.my-custom-route
+  register: https://avillar.github.io/bblocks-nov03-sample-route/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-10-29'

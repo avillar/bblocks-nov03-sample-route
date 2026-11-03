@@ -10,17 +10,17 @@ including [links](https://google.es).
 
 ## Building Blocks
 
-### `ogc.bbr.template.my-custom-route` — Route
-
-**Type:** schema
-
-A route: a road or path, described as a feature with a length in metres and a line geometry.
-
 ### `ogc.bbr.template.mySchema` — My Schema
 
 **Type:** schema
 
 An example schema defining the set of properties of any type of object.
+
+### `ogc.bbr.template.my-custom-route` — Route
+
+**Type:** schema
+
+A route: a road or path, described as a feature with a length in metres and a line geometry.
 
 ### `ogc.bbr.template.myFeature` — Custom Feature
 
