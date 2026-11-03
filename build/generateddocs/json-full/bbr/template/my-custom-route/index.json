@@ -1,0 +1,18 @@
+
+
+{
+  "itemIdentifier": "ogc.bbr.template.my-custom-route",
+  "name": "Route",
+  "abstract": "A route: a road or path, described as a feature with a length in metres and a line geometry.",
+  "status": "under-development",
+  "dateTimeAddition": "2026-10-29T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "shaclShapes": {},
+  "dateOfLastChange": "2026-11-03",
+  "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
+  "validationPassed": true,
+  "annotatedSchema": null,
+  "gitRepository": "https://github.com/avillar/bblocks-nov03-sample-route",
+  "gitPath": "_sources/my-custom-route"
+}
