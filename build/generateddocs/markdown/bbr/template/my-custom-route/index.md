@@ -25,7 +25,7 @@ A short route of two separate segments, with its length in metres.
   },
   "properties": {
     "name": "Turia riverside route",
-    "length": "200"
+    "length": 200
   }
 }
 
@@ -72,7 +72,7 @@ A short route of two separate segments, with its length in metres.
   },
   "properties": {
     "name": "Turia riverside route",
-    "length": "200"
+    "length": 200
   }
 }
 ```
