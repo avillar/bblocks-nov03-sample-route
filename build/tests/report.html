@@ -64,9 +64,9 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-11-03T16:31:31.536717+00:00</small>
-                <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 3 / 3 (100%)
+            <small class="datetime">Generated at 2026-11-03T16:33:20.693210+00:00</small>
+                <p class="summary fw-semibold text-danger">
+                    Number of passing building blocks: 2 / 3 (66.67%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
@@ -150,7 +150,7 @@
   </div>
                                                                     
                                                                     <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: _:Neaf3c63f1b094225862f738c7f0a0c9a
+ - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: _:N152a56aa66b7417ca9704ad49487bc04
 </div>
                                                     </div>
                                                 </div>
@@ -209,7 +209,7 @@
                         </div>
                         <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.my-custom-route" id="bblock-ogc.bbr.template.my-custom-route">
                             <h2 class="accordion-header bblock-title anchor-container">
-                                <button class="accordion-button collapsed" type="button"
+                                <button class="accordion-button " type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#bblock-collapse-ogc\.bbr\.template\.my-custom-route">
                                     <div class="flex-fill">
@@ -218,15 +218,77 @@
                                         <a class="anchor" href="#bblock-ogc.bbr.template.my-custom-route">¶</a>
                                     </div>
 
-                                    <span class="badge text-bg-success me-2">
-                                            Passed
-                                            (no tests)
+                                    <span class="badge text-bg-danger me-2">
+                                            Tests Failed
+                                            (0% passed)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.template.my-custom-route">
+                            <div class="accordion-collapse collapse show" id="bblock-collapse-ogc.bbr.template.my-custom-route">
                                 <div class="accordion-body">
-                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                        <p class="summary fw-semibold text-danger">
+                                            Test passed: 0 / 1
+                                        </p>
+                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.my-custom-route-1">
+                                            <div class="card-body">
+                                                <div class="card-title mb-0 anchor-container">
+                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
+                                                            aria-expanded="false" aria-controls="uid-3"
+                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                                                        <i class="bi bi-caret-right-fill caret"></i>
+                                                        Details
+                                                    </button>
+                                                    <a href="bbr/template/my-custom-route/example_1_1.json" target="_blank">example_1_1.json</a>
+                                                    <span class="badge bg-secondary example">Example</span>
+                                                    <a class="anchor" href="#item-ogc.bbr.template.my-custom-route-1">¶</a>
+                                                    <div class="float-end">
+                                                            <span class="badge text-bg-danger me-2">Failed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
+                                                    <div class="validation-text-inner">
+                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Using examples/valencia-route.json from examples</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
+                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: &#x27;200&#x27; is not of type &#x27;number&#x27;
+
+Failed validating &#x27;type&#x27; in schema[&#x27;allOf&#x27;][1][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;properties&#x27;][&#x27;length&#x27;]:
+    {&#x27;description&#x27;: &#x27;Length of the route, in metres.&#x27;,
+     &#x27;exclusiveMinimum&#x27;: 0,
+     &#x27;type&#x27;: &#x27;number&#x27;}
+
+On instance[&#x27;properties&#x27;][&#x27;length&#x27;]:
+    &#x27;200&#x27;</div>
+                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
+                                                                
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+  Validation Report
+  Conforms: True
+  </div>
+                                                                    
+                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
+ - Shape geojson:LinkShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
+ - Shape geojson:GeometryShape: *none*
+ - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
+ - Shape geojson:FeatureShape: &lt;file:///github/workspace/valencia-turia-1&gt;
+</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -256,8 +318,8 @@
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
-                                                            aria-expanded="false" aria-controls="uid-3"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
+                                                            aria-expanded="false" aria-controls="uid-4"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -270,7 +332,7 @@
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">General</div>
                                                                 
@@ -341,8 +403,8 @@ On instance:
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
-                                                            aria-expanded="false" aria-controls="uid-4"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
+                                                            aria-expanded="false" aria-controls="uid-5"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -354,7 +416,7 @@ On instance:
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 
@@ -402,8 +464,8 @@ On instance:
                                             <div class="card-body">
                                                 <div class="card-title mb-0 anchor-container">
                                                     <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
-                                                            aria-expanded="false" aria-controls="uid-5"
+                                                            data-bs-toggle="collapse" data-bs-target="#uid-6"
+                                                            aria-expanded="false" aria-controls="uid-6"
                                                             style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
                                                         <i class="bi bi-caret-right-fill caret"></i>
                                                         Details
@@ -415,7 +477,7 @@ On instance:
                                                             <span class="badge text-bg-success me-2">Passed</span>
                                                     </div>
                                                 </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
+                                                <div class="card-text mt-2 validation-text collapse" id="uid-6">
                                                     <div class="validation-text-inner">
                                                                     <div class="font-monospace subsection-title mt-2">Files</div>
                                                                 

@@ -3,7 +3,7 @@
   "name": "My OGC Building Blocks repository",
   "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
   "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-11-03T16:31:29.653721",
+  "modified": "2026-11-03T16:33:19.068615",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"373c26d1cdf143759ae2c602c0713e98e6af6fc9",
@@ -59,13 +59,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/avillar/bblocks-nov03-sample-route/blob/master/build/tests/bbr/template/mySchema/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/mySchema/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/mySchema/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -98,15 +98,16 @@
       "ldContext": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/context.jsonld",
       "resolvedSchemaProperties": "https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/resolvedProperties.json",
       "sourceFiles": "https://avillar.github.io/bblocks-nov03-sample-route/_sources/my-custom-route/",
-      "validationPassed": true,
+      "validationPassed": false,
+      "testOutputs": "https://github.com/avillar/bblocks-nov03-sample-route/blob/master/build/tests/bbr/template/my-custom-route/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -159,13 +160,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/avillar/bblocks-nov03-sample-route/blob/master/build/tests/bbr/template/myFeature/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/myFeature/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/myFeature/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",

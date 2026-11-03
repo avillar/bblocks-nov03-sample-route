@@ -21,10 +21,10 @@
     rdfs:label "Route" ;
     dct:abstract "A route: a road or path, described as a feature with a length in metres and a line geometry."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2026-10-29T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/my-custom-route/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/my-custom-route/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.my-custom-route> ] ;
     dct:hasVersion "0.1" ;
@@ -32,26 +32,26 @@
     skos:inScheme <https://avillar.github.io/bblocks-nov03-sample-route/> ;
     skos:prefLabel "Route" ;
     skos:topConceptOf <https://avillar.github.io/bblocks-nov03-sample-route/> ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.yaml> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
             prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/my-custom-route/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
-    bblocks:validationPassed true .
+    bblocks:validationPassed false .
 
 <bblocks://ogc.bbr.template.myFeature> a skos:Concept,
         dcat:Dataset,
@@ -60,10 +60,10 @@
     rdfs:label "Custom Feature" ;
     dct:abstract "This examples shows a simple customisation for OGC API Feature schemas"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/myFeature/index.json> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/myFeature/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/myFeature/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.myFeature> ] ;
     dct:hasVersion "1.0" ;
@@ -74,27 +74,27 @@
     skos:topConceptOf <https://avillar.github.io/bblocks-nov03-sample-route/> ;
     dcat:keyword "examples",
         "feature" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/myFeature/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/myFeature/schema.yaml> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/myFeature/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/myFeature/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
-            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
-            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/myFeature/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo shacl: ;
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.bbr.template.mySchema> ;
             prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/_sources/mySchema/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
             prof:hasRole role:validation ] ;
     bblocks:dependsOn <bblocks://ogc.bbr.template.mySchema>,
         <bblocks://ogc.geo.features.feature> ;
@@ -103,18 +103,18 @@
 
 <https://avillar.github.io/bblocks-nov03-sample-route/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Na6b4ff0a31b24e26be7b6a65b97a0aa7 ;
+    prov:wasAttributedTo _:Nd591564c7d004901906049557d5154e9 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-11-03T16:31:31.602537"^^xsd:dateTime ;
-            prov:startedAtTime "2026-11-03T16:31:31.538609"^^xsd:dateTime ;
+            prov:endedAtTime "2026-11-03T16:33:20.814300"^^xsd:dateTime ;
+            prov:startedAtTime "2026-11-03T16:33:20.695634"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
                 [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:1421b8420827a8f1364cc321901dedffeb69a682" ;
+                    dct:hasVersion "git:516955f5ac2ed6395163e96722c578dadf766b97" ;
                     rdfs:seeAlso <https://avillar.github.io/bblocks-nov03-sample-route/build/register.json> ] ;
-            prov:wasAssociatedWith _:Na6b4ff0a31b24e26be7b6a65b97a0aa7 ] .
+            prov:wasAssociatedWith _:Nd591564c7d004901906049557d5154e9 ] .
 
 <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
 
@@ -127,12 +127,12 @@
     rdfs:label "My Schema" ;
     dct:abstract "An example schema defining the set of properties of any type of object."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/mySchema/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.mySchema> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/markdown/bbr/template/mySchema/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/bblock/ogc.bbr.template.mySchema> ] ;
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://avillar.github.io/bblocks-nov03-sample-route/build/generateddocs/json-full/bbr/template/mySchema/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2026-11-03"^^xsd:date ;
     dct:source <https://example.com/sources/1> ;
@@ -140,23 +140,23 @@
     skos:prefLabel "My Schema" ;
     skos:topConceptOf <https://avillar.github.io/bblocks-nov03-sample-route/> ;
     dcat:keyword "templates" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/mySchema/context.jsonld> ;
-            prof:hasRole role:mapping ],
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.bbr.template.mySchema> ;
+            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/_sources/mySchema/shapes.shacl> ;
+            prof:hasRole role:validation ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/mySchema/schema.json> ;
             prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/mySchema/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/build/annotated/bbr/template/mySchema/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.bbr.template.mySchema> ;
-            prof:hasArtifact <https://avillar.github.io/bblocks-nov03-sample-route/_sources/mySchema/shapes.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://avillar.github.io/bblocks-nov03-sample-route/_sources/mySchema/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> ;
     bblocks:validationPassed true .
@@ -171,7 +171,7 @@ A "Tell me more" link will appear if there is an additional description with a l
     dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
 including [links](https://google.es).
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-11-03T16:31:29.653721"^^xsd:dateTime ;
+    dct:modified "2026-11-03T16:33:19.068615"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://ogc.bbr.template.my-custom-route>,
         <bblocks://ogc.bbr.template.myFeature>,
@@ -192,7 +192,7 @@ including [links](https://google.es).
     foaf:homepage <https://avillar.github.io/bblocks-nov03-sample-route/> ;
     bblocks:hasValidationReport <https://avillar.github.io/bblocks-nov03-sample-route/build/tests/report.html> .
 
-_:Na6b4ff0a31b24e26be7b6a65b97a0aa7 a prov:Agent,
+_:Nd591564c7d004901906049557d5154e9 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.36" ;

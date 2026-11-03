@@ -1,16 +1,16 @@
 {
   "summary": {
     "total": 3,
-    "passed": 3,
-    "failed": 0,
-    "result": true
+    "passed": 2,
+    "failed": 1,
+    "result": false
   },
   "bblocks": {
     "ogc.bbr.template.mySchema": {
       "title": "Validation report for ogc.bbr.template.mySchema - My Schema",
       "bblockName": "My Schema",
       "bblockId": "ogc.bbr.template.mySchema",
-      "generated": "2026-11-03T16:31:31.233764+00:00",
+      "generated": "2026-11-03T16:33:20.241816+00:00",
       "result": true,
       "items": [
         {
@@ -91,12 +91,12 @@
                   "focusNodes": {
                     "<https://www.ogc.org/rules/template/#testValues>": {
                       "nodes": [
-                        "_:Neaf3c63f1b094225862f738c7f0a0c9a"
+                        "_:N152a56aa66b7417ca9704ad49487bc04"
                       ]
                     }
                   },
                   "isError": false,
-                  "message": "Focus nodes for _sources/mySchema/shapes.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: _:Neaf3c63f1b094225862f738c7f0a0c9a\n"
+                  "message": "Focus nodes for _sources/mySchema/shapes.shacl:\n - Shape <https://www.ogc.org/rules/template/#testValues>: _:N152a56aa66b7417ca9704ad49487bc04\n"
                 }
               ]
             }
@@ -192,21 +192,116 @@
       "title": "Validation report for ogc.bbr.template.my-custom-route - Route",
       "bblockName": "Route",
       "bblockId": "ogc.bbr.template.my-custom-route",
-      "generated": "2026-11-03T16:31:31.363745+00:00",
-      "result": true,
-      "items": [],
+      "generated": "2026-11-03T16:33:20.398479+00:00",
+      "result": false,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/bbr/template/my-custom-route/example_1_1.json",
+            "url": "https://avillar.github.io/bblocks-nov03-sample-route/build/tests/bbr/template/my-custom-route/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": false,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using examples/valencia-route.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 44,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": false,
+                  "exception": "ValidationError",
+                  "errorMessage": "'200' is not of type 'number'",
+                  "isError": true,
+                  "message": "ValidationError: '200' is not of type 'number'\n\nFailed validating 'type' in schema['allOf'][1]['properties']['properties']['properties']['length']:\n    {'description': 'Length of the route, in metres.',\n     'exclusiveMinimum': 0,\n     'type': 'number'}\n\nOn instance['properties']['length']:\n    '200'"
+                }
+              ]
+            },
+            {
+              "name": "SHACL",
+              "title": "SHACL",
+              "entries": [
+                {
+                  "op": "shacl-report",
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+                  "isError": false,
+                  "message": "Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n  Validation Report\n  Conforms: True\n  "
+                },
+                {
+                  "shaclFile": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl",
+                  "focusNodes": {
+                    "geojson:LinkShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape": {
+                      "nodes": []
+                    },
+                    "geojson:GeometryShape/sh:or/rdf:rest/rdf:first": {
+                      "nodes": []
+                    },
+                    "geojson:FeatureShape": {
+                      "nodes": [
+                        "<file:///github/workspace/valencia-turia-1>"
+                      ]
+                    }
+                  },
+                  "isError": false,
+                  "message": "Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:\n - Shape geojson:LinkShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:first: *none*\n - Shape geojson:GeometryShape: *none*\n - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*\n - Shape geojson:FeatureShape: <file:///github/workspace/valencia-turia-1>\n"
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "globalErrors": {},
       "counts": {
-        "total": 0,
+        "total": 1,
         "passed": 0,
-        "failed": 0
+        "failed": 1
       }
     },
     "ogc.bbr.template.myFeature": {
       "title": "Validation report for ogc.bbr.template.myFeature - Custom Feature",
       "bblockName": "Custom Feature",
       "bblockId": "ogc.bbr.template.myFeature",
-      "generated": "2026-11-03T16:31:31.523061+00:00",
+      "generated": "2026-11-03T16:33:20.674787+00:00",
       "result": true,
       "items": [
         {
